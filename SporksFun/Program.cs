@@ -31,9 +31,9 @@ namespace SporksFun
             for (int i = 0; i < num; i++)
             {
                 //roll first die
-                int roll = rnd.Next(0, 5);
+                int roll = rnd.Next(0, 6);
                 //add total of second die roll
-                roll += rnd.Next(0, 5);
+                roll += rnd.Next(0, 6);
                 rollTotals[roll]++;
             }
 
