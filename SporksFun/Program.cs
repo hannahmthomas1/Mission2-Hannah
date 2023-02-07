@@ -30,7 +30,10 @@ namespace SporksFun
             //Simulate roll of dice
             for (int i = 0; i < num; i++)
             {
-                int roll = rnd.Next(0, 11);
+                //roll first die
+                int roll = rnd.Next(0, 5);
+                //add total of second die roll
+                roll += rnd.Next(0, 5);
                 rollTotals[roll]++;
             }
 
